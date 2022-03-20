@@ -21,3 +21,5 @@ result = iris.target_names[result[0]]
 st.title(result)
     
 
+
+    
