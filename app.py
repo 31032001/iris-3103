@@ -11,19 +11,11 @@ from sklearn.datasets import load_iris
 
 iris = load_iris()
 
-iris.data
-
-iris.target
-
 from sklearn.cluster import KMeans
 
 kmeans = KMeans(n_clusters=3)
 
 model = kmeans.fit(iris.data)
-
-model.labels_
-
-model.cluster_centers_
 
 result = model.predict([[sl,sw,pl,pw]])
 result = iris.target_names[result[0]]
