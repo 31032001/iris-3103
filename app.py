@@ -35,16 +35,8 @@ model.labels_
 
 model.cluster_centers_
 
-sepallength = float(input("Please enter the Sepal Length: "))
-sepalwidth = float(input("Please enter the Sepal Width: "))
-petallength = float(input("Please enter the Petal Length: "))
-petalwidth = float(input("Please enter the Petal Width: "))
-
-result = model.predict([[sepallength,sepalwidth,petallength,petalwidth]])
-if result == 0:
-  print('Iris setosa')
-elif result == 1:
-  print('Iris virginica')
-else:
-  print('Iris versicolor')
+result = model.predict([[sl,sw,pl,pw]])
+result = iris.target_names[result[0]]
+st.title(result)
+    
 
