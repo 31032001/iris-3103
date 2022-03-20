@@ -18,11 +18,11 @@ kmeans = KMeans(n_clusters=3)
 model = kmeans.fit(iris.data)
 op = model.predict([[sl,sw,pl,pw]])
 op = iris.target_names[op[0]]
-st.title(op)
+
 
 image1 = Image.open('Images/setosa.jpeg')
-image2 = Image.open('Images/versicolor.jpg')
-image3 = Image.open('Images/virginica.jpg')
+image2 = Image.open('Images/versicolor.jpeg')
+image3 = Image.open('Images/virginica.jpeg')
 
 if op[0] == 0: st.image(image1)
 elif op[0] == 1: st.image(image2)
