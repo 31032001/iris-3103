@@ -9,6 +9,13 @@ Original file is located at
 
 import tensorflow as tf
 import sklearn.datasets
+import streamlit as st
+st.title("Iris Classifier- API")
+
+sl = st.slider('Sepal Length', 4.3, 7.9, 0.5)
+sw = st.slider('Sepal Width', 2.0, 4.4, 0.5)
+pl = st.slider('Petal Length', 1.0, 6.9, 0.5)
+pw = st.slider('Petal Width', 0.1,2.5, 0.5)
 
 from sklearn.datasets import load_iris
 
