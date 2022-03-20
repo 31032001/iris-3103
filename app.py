@@ -19,8 +19,8 @@ model = kmeans.fit(iris.data)
 model.fit(iris.data,iris.target)
 
 op = model.predict([[sl,sw,pl,pw]])
-op = iris.target_names[result[0]]
-st.title(result)
+op = iris.target_names[op[0]]
+st.title(op)
 
 image1 = Image.open('Images/setosa.jpeg')
 image2 = Image.open('Images/versicolor.jpg')
