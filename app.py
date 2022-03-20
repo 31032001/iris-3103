@@ -16,8 +16,6 @@ from sklearn.cluster import KMeans
 kmeans = KMeans(n_clusters=3)
 
 model = kmeans.fit(iris.data)
-model.fit(iris.data,iris.target)
-
 op = model.predict([[sl,sw,pl,pw]])
 op = iris.target_names[op[0]]
 st.title(op)
@@ -26,9 +24,6 @@ image1 = Image.open('Images/setosa.jpeg')
 image2 = Image.open('Images/versicolor.jpg')
 image3 = Image.open('Images/virginica.jpg')
 
-
 if op[0] == 0: st.image(image1)
 elif op[0] == 1: st.image(image2)
 else: st.image(image3)
-
-    
