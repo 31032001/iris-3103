@@ -28,3 +28,5 @@ model.cluster_centers_
 result = model.predict([[sl,sw,pl,pw]])
 result = iris.target_names[result[0]]
 st.title(result)
+
+
